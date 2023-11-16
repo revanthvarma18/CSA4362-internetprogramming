@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <script>
+        function processPayment() {
+            // Assuming payment is successful (you should implement proper payment handling logic)
+            var name = document.getElementById("name").value;
+            var cardNumber = document.getElementById("cardNumber").value;
+            var expDate = document.getElementById("expDate").value;
+            var cvv = document.getElementById("cvv").value;
+
+            // Simulate payment success
+            if (name && cardNumber && expDate && cvv) {
+                alert("Payment Successful!");
+
+                // Redirect to a page for generating ticket and PNR
+                window.location.href = "pnr status 4.html";
+            } else {
+                alert("Payment Failed. Please check your details.");
+            }
+        }
+    </script>
+</head>
+<body style="background-color: yellow;">
+    <h1><center>PAYMENT for Reservation</center></h1><br><br>
+    <center>
+        <form action="#" method="post">
+            CARDHOLDER NAME:<input type="text" id="name" name="name" required><br><br>
+            CARD NUMBER:<input type="text" id="cardNumber" name="cardNumber" required><br><br>
+            EXPIRATION DATE:<input type="text" id="expDate" name="expDate" placeholder="MM/YY" required><br><br>
+            CVV<input type="text" id="cvv" name="cvv" required><br><br>
+        </form>
+         OFFLINE payment:<input type="text" id="name" name="name" required><br><br>
+        <form>
+            <button type="button" onclick="processPayment()">Pay</button>
+        </form>
+    </center>
+</body>
+</html>

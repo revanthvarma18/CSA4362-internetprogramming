@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancellation Rules</title>
+	<script>
+        function showAlert() {
+            
+            window.location.href = "thankyou7.html"; 
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Sample Cancellation Rules</h2>
+	enter PNR number to cancel the ticket: <input type="text" name="enter PNR number to cancel the ticket" required><br><br>
+    <ul>
+        <li>Cancellations made 24 hours before the departure time are eligible for a full refund.</li>
+        <li>Cancellations made within 24 hours of departure are subject to a 50% cancellation fee.</li>
+        <li>No refunds will be issued for cancellations made after the departure time.</li>
+    </ul>
+<form>
+        <button type="button" onclick="showAlert()">Done</button>
+    </form>
+
+    <!-- Include more specific cancellation rules here -->
+
+</body>
+</html>

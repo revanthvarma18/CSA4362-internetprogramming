@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <script>
+        function showAlert() {
+            
+            window.location.href = "ticket can 6.html"; 
+        }
+    </script>
+</head>
+<body style="background-color:yellow">
+    <h1><center>ADMIN PANEL</center></h1><br><br>
+<center>
+    <form action="/admin/add_train" method="post">
+            <h2>Add/Update Train Details</h2>
+            Train Name: <input type="text" name="trainName" required><br><br>
+            Origin Station: <input type="text" name="originStation" required><br><br>
+            Destination Station: <input type="text" name="destinationStation" required><br><br>
+            Date of Journey: <input type="date" name="journeyDate" required><br><br>
+            Seats Available: <input type="number" name="seatsAvailable" required><br><br>
+            Fare: <input type="number" name="fare" required><br><br>
+
+    </form>
+<center>
+   <form>
+        <button type="button" onclick="showAlert()">pay</button>
+    </form>
+</body>
+</html>

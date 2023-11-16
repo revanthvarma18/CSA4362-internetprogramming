@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNR Status Check</title>
+    <script>
+        function checkPNRStatus() {
+            // Here, you would typically send the PNR number to the server
+            // and retrieve the status. For simplicity, we are just showing an alert.
+            var pnrNumber = document.getElementById("pnrNumber").value;
+            alert("PNR Status: Checking for PNR Number " + pnrNumber);
+            // You can display the actual status to the user or redirect to a status page.
+             window.location.href = "store 5.html";
+        }
+    </script>
+</head>
+<body>
+    <h1><center>PNR STATUS CHECK</center></h1><br><br>
+    <center>
+        <form>
+            PNR Number: <input type="text" id="pnrNumber" name="pnrNumber" required><br><br>
+
+            <!-- The button will trigger the PNR status check process -->
+            <button type="button" onclick="checkPNRStatus()">Check Status</button>
+        </form>
+    </center>
+</body>
+</html>
